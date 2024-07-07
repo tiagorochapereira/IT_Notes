@@ -1,0 +1,7 @@
+How to change the network profile from Public to Private, in Windows:
+The best way is just to go to Powershell
+  First, let's get the configured networks profiles:
+  get-netconnectionprofile
+
+  Then, with the information gathered, set it to Public, for example:
+  set-netconnectionprofile -name "This_Shall_Be_A_Private_Network" -network Private
